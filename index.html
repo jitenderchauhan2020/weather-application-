@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wheather Applications </title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="script.js"></script> -->
+</head>
+<body>
+    <!-- wrapper container  -->
+    <div class="wrapper">
+        <!-- h1 heading  -->
+        <p class="heading" >Weather app</p>
+
+        <!-- tab container  -->
+        <div class="tab-container">
+            <div your-weather class="tab">Your Weather</div>
+            <div search-weather class="tab">Search Weather</div>
+        </div>
+
+        <!-- weather container  -->
+        <div class="weather-container">
+            
+            <!-- search form container  -->
+            <form search-screen class="submit-form ">
+                <input input-form placeholder="Enter your city..." class="input-form" type="text">
+                <button class="submit-button"  type="submit" ><img height="20" width="20" src="./assets/search.png" ></button>
+            </form>
+
+            <!-- grant access container  -->
+            <div grant-access-screen class="sub-container">
+                <img src="./assets/location.png" width="80" height="80" alt="glbutton">
+                <p>Grant Location Access</p>
+                <p>Allow Access to Get Weather Information</p>
+                <button class="grant-access-btn" > Grant Acess</button>
+            </div>
+
+            <!-- undefined screen error -->
+            <div class="error-screen sub-container">
+                <img src="./assets/not-found.png"  width="300" height="300">
+            </div>
+
+            <!-- loading screen -->
+            <div loading-screen class="sub-container" >
+                <img width="150" height="150" class="loading-gif" src="./assets/loading.gif"  alt="">
+                <p class="loading-text">loading</p>
+            </div>  
+            
+            <!-- user info  -->
+            <div user-screen class="sub-container">
+                <!-- city details  -->
+                <div class="name">
+                    <p city-name ></p> 
+                    <img country-flag src=""  alt="">
+                </div>
+                <!-- atmosphere details  -->
+                <p weather-desc ></p>
+                <!-- atmosphere icon  -->
+                <img weather-icon src="" alt="">
+                <!-- temprature -->
+                <p temprature ></p>
+
+                <div class="cards-container">
+                    <!-- card 1 -->
+                    <div class="card">
+                        <img  src="./assets/wind.png" alt="">
+                        <p  >Windspeed</p>
+                        <p data-windspeed ></p>
+                    </div>
+                    <!-- card 2  -->
+                    <div class="card">
+                        <img  src="./assets/humidity.png" alt="">
+                        <p  >Humidity</p>
+                        <p data-humidity ></p>
+                    </div>
+                    <!-- card 3 -->
+                    <div class="card">
+                        <img  src="./assets/cloud.png" alt="">
+                        <p  >Cloud</p>
+                        <p data-cloud ></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
